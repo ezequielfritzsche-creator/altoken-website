@@ -5,150 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altoken – Infraestructura de Tokens Corporativos</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
-            font-family: 'Inter', sans-serif;
-            color: #222;
-            background: #fff;
+            font-family: "Inter", sans-serif;
+            background-color: #F5F7FA; /* blanco nieve */
+            color: #2F4A65; /* azul montaña */
         }
 
-        header {
-            padding: 40px 0;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        /* HERO */
+        /* --- HERO --- */
         .hero {
-            padding: 120px 20px;
-            text-align: center;
             background: linear-gradient(
-                rgba(0,0,0,0.05),
-                rgba(0,0,0,0)
-            );
+                rgba(47, 74, 101, 0.7),
+                rgba(47, 74, 101, 0.7)
+            ),
+            url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&w=1600&q=90');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 90px 20px 120px;
+            text-align: center;
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 52px;
             font-weight: 700;
-            max-width: 900px;
-            margin: 0 auto 20px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
         }
 
         .hero p {
             font-size: 20px;
             max-width: 700px;
-            margin: 0 auto;
-            color: #555;
-        }
-
-        /* SECTIONS */
-        section {
-            padding: 80px 20px;
-            max-width: 1100px;
             margin: auto;
+            line-height: 1.6;
+            color: #E6E6E6;
         }
 
-        h2 {
+        /* --- SECTIONS --- */
+        .section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section h2 {
             font-size: 32px;
-            text-align: center;
-            margin-bottom: 40px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-left: 6px solid #8FA3B8; /* piedra oscuro (reemplazo del marrón) */
+            padding-left: 12px;
+            color: #2F4A65;
         }
 
-        .grid {
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #4B5563;
+        }
+
+        /* --- CARDS --- */
+        .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
         }
 
         .card {
-            padding: 30px;
-            border: 1px solid #eee;
-            border-radius: 12px;
-            text-align: center;
-            background: #fafafa;
+            background: #FFFFFF;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #E6E6E6; /* piedra claro */
+            transition: .25s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.10);
         }
 
         .card h3 {
-            margin-bottom: 10px;
-            font-size: 20px;
+            margin-top: 0;
+            color: #5A86B8; /* azul cielo profundo */
+            font-weight: 700;
+            font-size: 22px;
         }
 
+        /* --- FOOTER --- */
         footer {
+            background: #2F4A65; /* azul montaña */
+            color: white;
+            padding: 40px 20px;
             text-align: center;
-            padding: 40px;
-            background: #111;
-            color: #bbb;
+            margin-top: 80px;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#usos">Casos de uso</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
+    <div class="hero">
+        <h1>ALTOKEN</h1>
+        <p>Infraestructura de tokens corporativos con la solidez de la montaña y la claridad del cielo patagónico.</p>
+    </div>
 
-<section class="hero">
-    <h1>Infraestructura para emitir, gestionar y operar tokens corporativos</h1>
-    <p>
-        La plataforma que permite transformar beneficios, incentivos, compensaciones o unidades de valor en activos digitales seguros, auditables y totalmente configurables.
-    </p>
-</section>
+    <div class="section">
+        <h2>Transformamos la Compensación Corporativa</h2>
+        <p>
+            Altoken permite a empresas emitir, gestionar y distribuir tokens corporativos en un entorno seguro,
+            trazable y alineado con las mejores prácticas legales y laborales del país.
+        </p>
+    </div>
 
-<section id="como-funciona">
-    <h2>Cómo funciona Altoken</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Emisión</h3>
-            <p>Creación de tokens con reglas claras, trazabilidad y cumplimiento normativo.</p>
-        </div>
-        <div class="card">
-            <h3>Gestión</h3>
-            <p>Administración centralizada de saldos, ciclos y asignaciones.</p>
-        </div>
-        <div class="card">
-            <h3>Operación</h3>
-            <p>Intercambio, redeem o conversión según las políticas de cada empresa.</p>
+    <div class="section">
+        <h2>Infraestructura de Tokens</h2>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Emisión</h3>
+                <p>Creación técnica y legal de un token corporativo con reglas auditables.</p>
+            </div>
+
+            <div class="card">
+                <h3>Custodia</h3>
+                <p>Gestión segura o delegada, según política interna de compliance.</p>
+            </div>
+
+            <div class="card">
+                <h3>Backoffice Legal</h3>
+                <p>Cumplimiento regulatorio, CNV, laboral y documentación soportada.</p>
+            </div>
         </div>
     </div>
-</section>
 
-<section id="usos">
-    <h2>Casos de uso</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Beneficios Corporativos</h3>
-            <p>Estructuras no remunerativas o mixtas, con trazabilidad total.</p>
-        </div>
-        <div class="card">
-            <h3>Programas de Incentivos</h3>
-            <p>Bonos, premios o campañas con liquidación digital.</p>
-        </div>
-        <div class="card">
-            <h3>Puntos y Fidelización</h3>
-            <p>Sustituí sistemas aislados por activos digitales interoperables.</p>
+    <div class="section">
+        <h2>Distribución</h2>
+
+        <div class="card-grid">
+            <div class="card">
+                <h3>Beneficios para Empleados</h3>
+                <p>Puede ser remunerativo, no remunerativo o beneficio adicional, según el modelo elegido.</p>
+            </div>
+
+            <div class="card">
+                <h3>Incentivos</h3>
+                <p>Programas de performance, retención y cumplimiento de objetivos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fidelización</h3>
+                <p>Alternativa moderna a puntos y recompensas tradicionales.</p>
+            </div>
         </div>
     </div>
-</section>
 
-<footer id="contacto">
-    © 2025 Altoken — Todos los derechos reservados
-</footer>
+    <footer>
+        © 2025 ALTOKEN – Infraestructura de Tokens Corporativos
+    </footer>
 
 </body>
 </html>
